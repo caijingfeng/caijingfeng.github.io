@@ -1,14 +1,153 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
         <meta charset="utf-8">
-        <meta name="author"  content="蔡景锋">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="蔡景锋">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
         <title></title>
         <style>
+            *{
+                border: 0;
+            }
+           .navbar-inverse{
+               background-color: #e8e8e8;
+               border-top: 2px solid #103ba3;
+           }
+           .navbar-brand{
+               height: 70px;
+           }
+           #logo{
+               
+               height: 130%;
+              
+           }
+           .navbar-toggle{
+               height: 150%;
+           }
+           .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                line-height: 60px;
+                font-size: 25px;
+                }
+            
+             .navbar-nav > li > a:hover {
+                     border-bottom: 1px solid #103ba3;
+                     color: blue;
+                 }
+             /*.con-img{
+                 width: 100%;
+                 height: 100%;
+             }*/
+             .dd{
+                 text-align: center;
+             }
+             .red_text{
+            color: red;
+                           }
+              .blue_text{
+                 color: blue;
+             }
+              .yellow_text{
+                 color: yellow;
+             }
+              .container{
+                          position: relative;
+                      }
+             
+            
+                /*@media (min-width: 768px) {
+                    .navbar-form .form-group {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        vertical-align: middle;
+                        
+                    }*/
+                .aa,.bb{
+                   padding: 0;
+                }
+                .form-group{
+                    margin-top: 2rem;
+                }                                   
         </style>
-</head>
-<body>
-    dd
-        <script src>
-        </script>
-</body>
+    </head>
+    <body>
+        <nav class="navbar-inverse">
+            <div class="container">
+               <div class="navbar-header col-sm-3 ">
+                    <button id="button" type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar"> 
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                    <a class="navbar-brand "><img id="logo" src="images/logo.png" alt=""></a>
+               </div> 
+               <div id="navbar"  class="collapse navbar-collapse col-sm-9">
+                   <ul  class="nav navbar-nav ">
+                       <li class="active"><a href="">首页</a></li>
+                       <li><a href="#">媒体中心</a></li>
+                       <li><a href="#">关于我们</a></li>
+                       <li><a href="#">业务板块</a></li>
+                       <li><a href="#">产品服务</a></li>
+                   </ul>
+                     
+                      <div class="pull-left">
+                            <form role="form"> 
+                               <div class="form-group">
+                                    <div class=" aa col-md-8 col-sm-8"> 
+                                        <input  type="text" class="form-control " placeholder="search hear">
+                                    </div>
+                                    
+                               </div>
+                               <div class="form-group">
+                                    <div class=" bb col-md-4 col-sm-4">
+                                        <button  type="reset" class="btn btn-primary ">搜索</button>
+                                    </div>
+                                </div>
+                            </form>
+                       
+                      </div>
+                   
+                   
+               </div> 
+                   
+            </div>
+            
+            
+        </nav>
+       
+           <div ><img class="img-responsive" src="images/con1.jpg" alt=""></div>
+           <div class="container">
+               <div class="col-lg-4 col-md-4 col-sm-6  col-xs-12">
+                   <div class="dd"  data-toggle="red_text" data-target="h3">
+                        <h3>编辑财富：地方政府经济发展金融服务商</h3>
+                        <p class="text-muted">是风度和地方是个大事方法十多个水电费和年度非是好</p>
+                   </div>
+               </div>
+                <!--<script>
+            $('[data-toggle=red_text]').click(function(){
+                $($(this).attr('data-target')).toggleClass('red_text');
+            })
+           </script>-->
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                   <h3>编辑财富：地方政府经济发展金融服务商</h3>
+                    <p class="text-muted">是风度和地方是个大事方法十多个水电费和年度非是好</p>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4   col-xs-12">
+                       
+                       <h3>编辑财富：地方政府经济发展金融服务商</h3>
+                       <p class="text-muted">是风度和地方是个大事方法十多个水电费和年度非是好</p>
+                       
+                    
+               </div>
+           </div>
+           
+      
+        
+        <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>

@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/jquery.fullPage.css" tppabs="http://www.flqin.com/css/jquery.fullPage.css" />
 	<link rel="stylesheet" href="css/component.css" tppabs="http://www.flqin.com/css/component.css" />
 	<link rel="stylesheet" href="css/index.css" tppabs="http://www.flqin.com/css/index.css" />
-	<title>web前端工程师简历</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+    <title>web前端工程师简历</title>
 </head>
 <body>
 <!-- header navigation -->
@@ -89,7 +90,7 @@
                     </div>
                     <div class="about_list">
                         <div class="about_list_eg" id="about_en_sta">status</div>
-                        <div class="about_list_cn" id="about_cn_sta">状态<p>在职</p></div>
+                        <div class="about_list_cn" id="about_cn_sta">状态<p>离职</p></div>
                     </div>
 				</div>
 				<div id="about_info"></div>
@@ -175,21 +176,7 @@
                                     </div>
                             	</div>
                         	</div>
-                            <div class="exp_list">
-                                <div class="exp_list_left">
-                                    <div id="exp_list_left3">
-                                        <dl>
-                                            <dt>成都兰途网络科技有限公司</dt>
-                                            <dd class="exp_list_time">2015年7月~现在</dd>
-                                            <dd>前端技术部</dd>
-                                            <dd>负责快速构建高质量移动app页面</dd>
-                                            <dd>用less预编译css，gulp进行自动化构建</dd>
-                                            <dd>使用原生JS+angularJS进行前端开发</dd>
-                                            <dd>使用git svn进行版本控制，Phonegap/Cordova进行app打包</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     <div id="exp_list_to">
                     	<div id="exp_list_toleft"><img src="images/exp_list_toleft.png" tppabs="http://www.flqin.com/image/exp_list_toleft.png" /></div>
@@ -220,7 +207,7 @@
                     	<li class="demo_scale">
                             <div class="demo_box_content">
                             	<div class="demo_box_hover">
-                                    <p class="demo_box_title">DEMO:DOM编程艺术</p>
+                                    <p class="demo_box_title">highchart实现获取天气api数据</p>
                                     <span class="demo_box_hover_icon">
                                         <a href="index.html" tppabs="http://www.flqin.com/demo/js原生demo/index.html" target="_blank" class="demo_box_link">
                                             <img src="images/demo-link.png" tppabs="http://www.flqin.com/image/demo-link.png" alt="" />
@@ -233,9 +220,9 @@
                         <li class="demo_scale">
                             <div class="demo_box_content">
                                 <div class="demo_box_hover">
-                                    <p class="demo_box_title">乾程企业</p>
+                                    <p class="demo_box_title">bootstrap宝钢</p>
 									<span class="demo_box_hover_icon">
-										<a href="javascript:if(confirm('http://www.sctyqc.cn/index.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ������·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ�����?'))window.location='http://www.sctyqc.cn/index.html'" tppabs="http://www.sctyqc.cn/index.html" target="_blank" class="demo_box_link">
+										<a href="baogang.html"  target="_blank" class="demo_box_link">
 											<img src="images/demo-link.png" tppabs="http://www.flqin.com/image/demo-link.png" alt="" />
 										</a>
 									</span>
@@ -246,9 +233,9 @@
                         <li class="demo_scale">
 							<div class="demo_box_content">
                             	<div class="demo_box_hover">
-									<p class="demo_box_title">卓煌企业</p>
+									<p class="demo_box_title">楼盘</p>
                                     <span class="demo_box_hover_icon">
-                                    	<a href="javascript:if(confirm('http://www.sczhuohuang.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ������·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ�����?'))window.location='http://www.sczhuohuang.com/'" tppabs="http://www.sczhuohuang.com/" target="_blank" class="demo_box_link">
+                                    	<a href="loupan.html" tppabs="http://www.sczhuohuang.com/" target="_blank" class="demo_box_link">
 											<img src="images/demo-link.png" tppabs="http://www.flqin.com/image/demo-link.png" alt="" />
                                         </a>
                                     </span>
@@ -274,6 +261,7 @@
                 <div id="demo_info" class="demo_scale">
                     <p>这是我的部分demo。</p>
                     <p>更多demo请移步<a href="#" class="md-trigger" data-modal="modal-3">这里</a>。</p>
+                    <p id="progressbar"></p>
                 </div>
             </div>
         </div>
@@ -305,8 +293,7 @@
                         前端自学迷茫？<br/>
                         前端面试会问什么？<br/>
                         想学习该简历怎么制作？<br/><br/>
-                        QQ小群：<a target="_blank" href="javascript:if(confirm('http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ������·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ�����?'))window.location='http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5'" tppabs="http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5">Fe.d小分队</a><br/><br/>
-                        互相学习交流，共同进步O(∩_∩)O~
+                       
                     </div>
                     <div id="contact_message2" class="contact_message">谢谢</div>
                 </div>
@@ -377,6 +364,8 @@
 <!-- pop layer -->
 </body>
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/progressbar.js"></script>
 <!--<script src="js/jquery-1.11.2.min.js" tppabs="http://www.flqin.com/js/jquery-1.11.2.min.js"></script>-->
 <script src="js/jquery.easing.min.js" tppabs="http://www.flqin.com/js/jquery.easing.min.js"></script>
 <script src="js/jquery.fullPage.min.js" tppabs="http://www.flqin.com/js/jquery.fullPage.min.js"></script>

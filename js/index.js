@@ -210,6 +210,10 @@ $(function(){
 		$("#exp_list_content").stop(true,false).animate({left:-$(".exp_list").width()*$(this).index()},2000,"easeInOutCubic");
 		page=$(this).index()+1;
 		});
+        
+        
+        
+        
 	$("#exp_list_toleft").click(function()
     {
 		if(!$("#exp_list_content").is(":animated")){

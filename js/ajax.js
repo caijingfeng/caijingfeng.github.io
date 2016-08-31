@@ -6,7 +6,7 @@ $(function() {
 
 
         $.ajax({
-            url: "http://apis.baidu.com/apistore/weatherservice/cityinfo",  /////请求的地址 
+            url: "https://apis.baidu.com/apistore/weatherservice/cityinfo",  /////请求的地址 
             headers: { ///请求头
                 apikey: "17120600e2b2aa68a0c942c5e4cc0251",
 
@@ -26,7 +26,7 @@ $(function() {
                 
                 console.log(res);
                 $.ajax({
-                    url: "http://apis.baidu.com/apistore/weatherservice/recentweathers",  /////请求的地址 
+                    url: "https://apis.baidu.com/apistore/weatherservice/recentweathers",  /////请求的地址 
                     headers: { ///请求头
                         apikey: "b25f38db393ff8bf6167dc4e57c99803",
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找茬游戏</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+            width: 100%; 
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #888;
+            margin: 0 0;
+            padding: 0 0;
+        }
+        main{
+            width:900px;
+            height:565px;
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <audio src="assets/audios/a.mp3"></audio>
+    <audio src="assets/audios/click.mp3"></audio>
+    <audio src="assets/audios/pass.mp3"></audio>
+    <audio src="assets/audios/complete.mp3"></audio>
+    <audio src="assets/audios/timeout.mp3"></audio>
+    <main>
+
+    </main>
+    
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/jquery.fullscreen.js"></script>
+    <script src="assets/scripts/full_screen.js"></script>
+    <script src="assets/scripts/audio.js"></script>
+    <script src="assets/scripts/scene.js"></script>
+    <script src="assets/scripts/scene_start.js"></script>
+    <script src="assets/scripts/scene_complete.js"></script>
+    <script src="assets/scripts/second_manager.js"></script>
+    <script src="assets/scripts/scene_timeout.js"></script>
+    <script src="assets/scripts/label.js"></script>
+    <script src="assets/scripts/game.js"></script>
+    <script src="assets/scripts/scene_game.js"></script> 
+    <!--<script src="assets/dist/game.min.js"></script>-->
+    <script>
+        new Game($("main"));
+    </script>
+</body>
+</html>

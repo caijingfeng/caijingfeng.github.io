@@ -1,0 +1,373 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header{
+    width:100%;   
+}
+
+nav{
+    width: 1024px;
+    margin: 0 auto;
+    background-image: url('../images/wangyou/nav_bg.png');
+    height:30px;
+    padding: 15px 0px;
+    background-repeat: repeat-x;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    line-height: 30px;
+    margin-right: 15px;
+   
+   
+}
+nav a{
+     text-decoration: none;
+     color: gray;
+}
+nav ul li img{
+    margin-right: 7px;
+    vertical-align: middle;
+    
+}
+
+#main_top{
+     background-image:url('../images/wangyou/banner_bg.png');
+     width:1920px;   
+     height: 948px;
+     position: relative;
+}
+
+ 
+#main_top #banner_1 {
+     position: absolute;
+     top:30px;
+     left: 445px;
+    
+}
+ #main_top #banner_2 {
+     position: absolute;
+     top:155px;
+     left: 594px;
+    
+}
+
+#main_input{
+    background-image: url('../images/wangyou/banner_input.png');
+    height: 437px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:470px;
+    left: 441px;
+}
+
+#main_input ol{
+    position: absolute;
+    left: 206px;
+    top:133px;
+   
+    margin: 0;
+      
+}
+#main_input ol li{
+    text-decoration: none; 
+    color: rgb(255, 255, 220);
+    font-weight: bold;
+    font-size: 1.2rem;
+      
+}
+#main_input ol li{
+    
+    float: left;
+    margin-right: 137px;
+    
+}
+.clear_both{
+    clear: both;
+}
+
+form{
+    position: absolute;
+    top: 172px;
+    left: 148px;
+    
+}
+form label{
+    color: #ffffdc;
+    font-size: 15px;
+    font-weight: bold;
+}
+form #pwd{
+    position: relative;
+    left: 15px;
+}
+form input{
+    height: 27px;
+    margin: 10px 0;
+    
+    
+}
+form button{
+   width: 144px;
+   height: 40px;
+   border-radius: 8px;
+   background-color: #a3bf0f;
+   position: relative;
+   left: 55px;
+   border: 0;
+   color: #fffdd7;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+#main_input ul {
+    position: absolute;
+    left: 408px;
+    top: 147px;
+    margin-left: 0px;;
+    list-style: none;
+    padding: 0;
+}
+#main_input ul li{
+      display: inline-block;
+      margin-left: 30px;
+      
+     
+}
+#main_input ul li img{
+      position: relative;
+      left: 15px;
+    
+      display: block;
+   
+}
+
+#main_input ul li a{
+    background-color: #b84a11;
+    width: 150px;
+    height: 35px;
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fbdcc3;
+    border-radius: 8px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bolder;
+    
+    
+}
+
+
+
+#main_footer{
+    background-image: url('../images/wangyou/main_footer_bg.png');
+    height: 1123px;
+    width: 1920px;
+    position: relative;
+   
+   
+  
+}
+
+#main_img1{
+    text-align: center;
+    background-image: url('../images/wangyou/main_img0.png');
+    position: relative;
+    width: 1024px;
+    height: 402px;
+    left: 441px;
+    top: -77px;
+    
+}
+#main_img1 h2{
+    color: #ffe79e;
+    margin-top: 0px;
+    position: relative;
+    top: 40px;
+}
+#main_img1 ul{
+    margin: 0;
+    list-style: none;
+}
+#main_img1 ul li{
+  display: inline-block;
+    
+}
+#main_img1 ul li h3{
+  color: #ffe79e;
+    
+}
+#main_img1 ul li p{
+  width: 223px;
+  color: #eebc73
+    
+}
+
+#main_img2 {
+    background-repeat: no-repeat;
+   background-image: url('../images/wangyou/content.png');
+   height: 366px;
+  
+    position: relative;
+   top: -65px;
+  left: 440px;
+    
+}
+#main_nav{
+    padding: 10px 0;
+}
+#main_nav ul{
+   
+   list-style: none; 
+   margin: 0;  
+}
+#main_nav ul li{
+  
+  margin-left: 15px;
+  display: inline-block;
+}
+#main_nav ul li a{
+  text-decoration: none;
+  color: #fff1ca;
+  margin-left: 5px;
+  
+}
+#main_nav ul li a:hover{
+   
+  color: #f6bd1a;
+}
+#main_content{
+    padding: 30px 0 0 50px;
+    height: 160px;
+    width: 240px;
+    overflow: hidden;
+}
+
+#main_content ul{
+    margin: 0;
+    padding: 0;
+    height: 640px;
+    width: 240px;
+    list-style: none;
+    animation: slide 15s ease-in-out infinite;
+}
+#main_content ul li{
+    display: inline-block;;
+    font-size: 12px;
+    height: 160px;
+    width: 240px;
+    color: #c6ab88;
+}
+
+ @keyframes slide{
+     0%{
+         margin-top: 0px; 
+     }16%,
+     17%{
+          margin-top: -163px;
+     }
+     34%,
+     51%{
+          margin-top: -320px;
+     }
+     56%,
+     73%{
+         margin-top: -480px; 
+     } 85%,
+  100% {
+    margin-top: 0px;
+  }
+ }
+
+#main_content ul li span:nth-child(1){
+    color: #f7e0c4;
+    font-size: 35px;
+    font-weight: bold;
+}
+#main_content ul li span:nth-child(2){
+  
+    font-size: 17px;
+    font-weight: bold;
+}
+#main_content ul li h2{
+   color: #f7e0c4;
+   
+}
+
+
+
+footer{
+    background-image: url("../images/wangyou/footer_bg.png");
+    height: 237px;
+    width: 1920px;
+    position: absolute;
+    top: 1930px;
+   
+    
+}
+
+#footer_a{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    font-size: 11px;
+    color: #ae8362;
+    
+}
+#footer_a h2{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+#tel p{
+     
+    margin-bottom: 5px;
+}
+
+#footer_img{
+    position: absolute;
+    bottom: 60px;
+    right: 27px;
+}
+
+#footer_a div{
+    
+    display: inline-block;
+    margin-right: 57px;
+}
+#tel{
+    margin-right: 0;
+}
+#footer_aboutUs  #aboutus{
+    margin-right: 0;
+}
+
+#footer_aboutUs div{
+   display: inline-block;
+}
+
+#footer_b{
+   color: #ae8362;
+   width:1024px;
+   margin: 0 auto;
+   position: relative;
+   top: 80px;
+   font-size: 11px;
+}
+
+
+
+
+
